@@ -26,6 +26,7 @@ int main(){
             par[i][j] =i;
         }
     }
+    //dist[i][j] -> means shortest distance between node i and j
     for(int k=0; k<n; k++){
         for(int i=0; i<n; i++){
             for(int j=0; j<n; j++){
