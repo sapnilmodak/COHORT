@@ -29,6 +29,7 @@ int rec(int l , int x , int itemleft){
     if(w[l] <= x && itemleft>0){
         ans = max(ans , rec(l , x - w[l] , itemleft-1) + v[l]);
     }
+    //store
     return dp[l][x][itemleft] = ans;
 }
 void genrate(int l , int x , int itemleft){

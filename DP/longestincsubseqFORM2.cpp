@@ -6,9 +6,11 @@ int rec(int level){
     //basecase
     if(dp[level] != -1) return dp[level];
     //transaction
-    int ans=-1e9;
+    int ans=1;
     for(int prv=0; prv<level;prv++){
-        ans = max(ans , rec(prv)+1);
+        if(arr[prv] < arr[level]){
+            ans = max(ans , rec(prv)+1);
+        }
     }
     
     return dp[level] = ans;
