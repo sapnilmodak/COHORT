@@ -11,6 +11,8 @@ int main() {
     cin>>s;
     n = s.size()-1;
     int prefix[1001];
+
+    
     int lastt[1001];
     int dp[1001];
     memset(lastt , -1 , sizeof(lastt));
